@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models;
+use App\Models\User;
+use App\Models\yuna;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,36 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('admin')->group(function()
+{
+    Route::get('test/{slug}-{id}', function($slug = null, $id = null)
+    {
+        $content = 'test: <br/>';
+        $content .= 'id = '.$id;
+        $content .= 'slug = '.$slug;
+        return $content;
+    })->where
+    (
+        [
+            'id' => '[0-9]+'
+        ]
+    );
+
+    Route::get('/', function(){
+        return view('admin.adminmain');
+    });
+
+    Route::get('/create', function(){
+        return view('admin.test');
+    });
+
+
+});
+
+Route::prefix('/')->group(function()
+{
+    Route::get('/', function()
+    {
+        return view('index');
+    });
 });
