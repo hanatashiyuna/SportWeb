@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div><a href="{{route('yuna.create')}}">Create New Blog</a></div>
+    <div><a href="">Create New Blog</a></div>
     <table>
         <thead>
             <tr>
@@ -18,17 +18,15 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($yunas as $yuna)
             <tr>
-                <td>{{$yuna->id}}</td>
-                <td>{{$yuna->title</td>
-                <td>{!! $yuna->content !!}</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td>
                     <form action=""></form>
                 </td>
             </tr>
 
-            @endforeach
         </tbody>
     </table>
 </body>

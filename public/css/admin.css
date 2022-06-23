@@ -52,6 +52,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 30px;
+    margin-top: 7px;
 }
 
 .nav {
@@ -109,6 +110,16 @@ body {
     display: flex;
     text-decoration: none;
     color: #fff;
+}
+
+.nav ul li a:first-child {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 14px;
 }
 
 .nav ul li a .icon {
@@ -858,3 +869,104 @@ body {
 
 
 /* new menu */
+/* create post */
+.title-create-post{
+    color: #03a9f4;
+    display: flex;
+    justify-content: center;
+}
+
+.form-create-post{
+    width: 100%;
+    margin: 25px;
+}
+
+.form-create-post-inside{
+    margin-top: 25px;
+}
+
+.form-create-post
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-create-item{
+    display: flex;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    border: 1px solid #CCCCCC;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px black;
+    outline: none;
+}
+
+.form-create-upload-file{
+    display: flex;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-label{
+    margin-bottom: 5px;
+}
+
+.title-input{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+    outline-style: none;
+    border: 0.5px solid #CCCCCC;
+    border-radius: 10px;
+}
+
+.title-input.title-2{
+    height: auto;
+}
+
+.title-input.upload-file{
+    width: 350px;
+    height: auto;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    outline: none;
+}
+
+::-webkit-file-upload-button{
+    color: white;
+    background-color: #03a9f4;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+::-webkit-file-upload-button:hover{
+    background-color: #0563af;
+}
+
+.btn-submit button{
+    width: 100px;
+    height: 30px;
+    background-color: #03a9f4;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    outline: none;
+}
+
+.btn-submit button:hover{
+    background-color: #0563af;
+}

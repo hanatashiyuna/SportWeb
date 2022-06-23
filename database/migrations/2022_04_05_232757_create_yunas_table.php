@@ -13,10 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('yunas', function (Blueprint $table) {
+        Schema::create('table_yunas', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->unique();
-            $table->text('content')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('yunas');
+        Schema::dropIfExists('table_yunas');
     }
 };

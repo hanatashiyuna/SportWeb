@@ -2,7 +2,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'polarArea',
     data: {
-        labels: ['Facebook', 'Intergam', 'Tiktok', 'Youtube', 'Amazon'],
+        labels: ['Facebook', 'Instagram', 'Twitter', 'Youtube', 'Amazon'],
         datasets: [{
             label: 'Traffic Source',
             data: [1200, 1900, 2222, 3000, 2000],
